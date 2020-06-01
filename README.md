@@ -1,11 +1,11 @@
-CPT - Copper Postgres Tool
+CPT - Copper PostgreSQL Tool
 ==============================
 CPT is a command line tool for monitoring and managing PostgreSQL
 based Copper Workflow Engine databases. 
 CPT can be used from the command line or within scripts. Access to the PostgreSQL database is configured through an environment variable which makes it easy to run the tool in a containerized environment.  
-CPT was primarily developed for the Linux OS, and all application examples use the Linux command line syntax.
-More infos about the Copper Workflow Engine can be found at http://www.copper-engine.org and 
-https://github.com/klumw/copper-examples.  
+CPT was primarily developed for the Linux OS and all application examples use the Linux command line syntax.  
+More infos about the Copper Workflow Engine can be found at http://www.copper-engine.org  
+and https://github.com/klumw/copper-examples.  
  
 Installation
 ------------
@@ -49,7 +49,11 @@ List of CPT Commands
 
 ## count
 Count workflow instances that are  in a specific state.  
-The ***-state*** flag applies the state filter.  
+
+#### -state
+
+The ***-state*** flag applies the state filter.
+Possible states are: [ENQUEUED PROCESSING WAITING FINISHED INVALID ERROR ALL]  
 
 **Example**
 ```
