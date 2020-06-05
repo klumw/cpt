@@ -94,8 +94,8 @@ cpt broken -error-time-end='2020-04-26 11:40:40.78'
 ```
 Prints all broken workflow instances Id's that have an error time before 2020-04-26 11:40:40.78.
 
-#### -class
-Filter on workflow class. Workflow class name must contain the full package name.
+#### -workflow-class
+Filter on workflow class. The workflow class name must contain the full package name.
 
 **Example**
 ```
@@ -103,7 +103,7 @@ cpt broken -workflow-class='org.wkl.copper.full.wf.OrderCheckWorkflow'
 ```
 
 #### -count
-Instead of workflow instance id(s) print amount of selected instances.
+Print instance count instead of workflow instance id(s).
 
 ## data
 Search for workflow instance data by using state and/or a json selector as filters.  
@@ -168,23 +168,23 @@ Cleanup command for the Copper database. Cleanup removes outdated data from the 
 All tables are scanned and outdated entries are deleted. 
 
 #### -age
-Selects all data older than age.
+Selects all data older than age. Mandatory flag.
 
 Possible age formats are:  
 
-**Hours**
+**Hours Example**
 ```
 cpt cleanup -age=24h
 ```
 Removes all workflow data older than 24 hours.
 
-**Days**
+**Days Example**
 ```
 cpt cleanup -age=30d
 ```
 Removes all data older than 30 days.
 
-**Timestamp**
+**Timestamp Example**
 ```
 cpt cleanup -age='2020-04-25 11:40:40.78'
 ```
