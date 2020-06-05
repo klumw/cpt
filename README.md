@@ -190,10 +190,10 @@ cpt cleanup -age='2020-04-25 11:40:40.78'
 ```
 Removes all workflow data older than 2020-04-25 11:40:40.78.
 
-### -audit-trail
+#### -audit-trail
 Removes audit trail data.
 
-### -workflow-instance
+#### -workflow-instance
 Removes instance data.
 
 ## show
